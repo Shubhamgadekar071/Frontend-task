@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 60%;
+            height: 400px;
+            background-color: aquamarine;
+            margin: 10px;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+            margin: 10px;
+        }
+        .container:nth-child(1)> .box{
+            background-color: red;
+        }
+        .container:nth-child(2)> .box{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</div>
+    <div class="container">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</div>
+
+</body>
+</html>
+
+div > p:first-of-type (1){
+    background-color: orange;
+}
